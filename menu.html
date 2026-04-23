@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notre Carte — Blu Blu Sidi Bou Paris</title>
+<meta name="description" content="Découvrez la carte authentique de Blu Blu Sidi Bou Paris : entrées, briks, ojjas, couscous, grillades de poissons et viandes, desserts tunisiens.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Marcellus&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="menu.css">
+</head>
+<body class="menu-page">
+
+<!-- NAVIGATION -->
+<nav class="nav scrolled" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-mark">Blu blu</span>
+      <span class="nav-logo-sub">sidi bou — Paris</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#hero">Accueil</a></li>
+      <li><a href="index.html#histoire">Notre histoire</a></li>
+      <li><a href="menu.html" class="active">Carte</a></li>
+      <li><a href="index.html#galerie">Galerie</a></li>
+      <li><a href="index.html#avis">Avis</a></li>
+      <li><a href="index.html#contact">Réserver</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MENU HEADER -->
+<header class="menu-header">
+  <div class="menu-header-bg"></div>
+  <div class="menu-header-content">
+    <span class="hero-eyebrow">— Notre carte —</span>
+    <h1 class="menu-title">L'art de la table<br/><em>tunisienne</em></h1>
+    <p class="menu-intro">Une sélection de plats authentiques, préparés chaque jour avec des produits frais et selon les recettes traditionnelles de Sidi Bou Saïd.</p>
+
+    <!-- Sticky tabs nav -->
+    <nav class="menu-tabs">
+      <a href="#entrees-froides">Entrées froides</a>
+      <a href="#entrees-chaudes">Entrées chaudes</a>
+      <a href="#entre-deux">Entre-deux</a>
+      <a href="#plats">Plats & spécialités</a>
+      <a href="#couscous">Couscous</a>
+      <a href="#poissons">Poissons</a>
+      <a href="#viandes">Viandes</a>
+      <a href="#desserts">Desserts</a>
+      <a href="#boissons">Boissons</a>
+    </nav>
+  </div>
+</header>
+
+<main class="menu-main">
+
+  <!-- Bandeau information allergènes (obligation légale INCO) -->
+  <div class="allergen-notice">
+    <div class="container">
+      <p>
+        <strong>⚠ Information allergènes :</strong>
+        Pour toute allergie ou intolérance alimentaire, merci d'en informer notre équipe avant la commande.
+        <a href="allergenes.html">Voir la liste des 14 allergènes →</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- ENTRÉES FROIDES -->
+  <section class="menu-cat-section" id="entrees-froides">
+    <div class="container">
+      <div class="cat-header">
+        <span class="cat-roman">I</span>
+        <h2>Entrées froides</h2>
+        <div class="cat-flourish"></div>
+      </div>
+      <div class="dishes-grid">
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Salade Mechouia</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">8,50 €</span>
+          </div>
+          <p>Salade tunisienne à base de poivrons, tomates grillées, thon et œufs, relevée à l'ail et à l'huile d'olive.</p>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Salade Tunisienne</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">7,50 €</span>
+          </div>
+          <p>Mélange rafraîchissant de tomates, concombres, oignons, thon et olives, assaisonné d'huile d'olive.</p>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Omek Houria</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">7,50 €</span>
+          </div>
+          <p>Purée de carottes légèrement épicée à l'harissa et à l'ail, garnie d'olives et d'œufs avec un filet d'huile d'olive.</p>
+        </article>
+        <article class="dish dish-feature">
+          <div class="dish-head">
+            <h3>Assiette Tounsi</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">11 €</span>
+          </div>
+          <p>Mélange raffiné de salade tunisienne, salade mechouia, harissa maison, thon et œufs parfaits.</p>
+          <span class="dish-tag">Signature</span>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Trio de salades tunisiennes</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">9 €</span>
+          </div>
+          <p>Assortiment de trois salades tunisiennes emblématiques : mechouia, tunisienne et omek houria.</p>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Salade de poulpe</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">12 €</span>
+          </div>
+          <p>Mélange gourmand de salade et de poulpe assaisonné d'un filet d'huile d'olive.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENTRÉES CHAUDES -->
+  <section class="menu-cat-section alt" id="entrees-chaudes">
+    <div class="container">
+      <div class="cat-header">
+        <span class="cat-roman">II</span>
+        <h2>Entrées chaudes</h2>
+        <div class="cat-flourish"></div>
+      </div>
+      <div class="dishes-grid">
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Chorba frik au poisson</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">8,50 €</span>
+          </div>
+          <p>Soupe traditionnelle au poisson parfumée aux épices.</p>
+        </article>
+        <article class="dish dish-feature">
+          <div class="dish-head">
+            <h3>Brik à l'œuf & thon</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">5 €</span>
+          </div>
+          <p>Feuilleté frit croustillant farci au thon, œuf coulant et persil.</p>
+          <span class="dish-tag">Incontournable</span>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Brik crevette</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">6 €</span>
+          </div>
+          <p>Feuilleté frit croustillant farci de crevettes, œuf coulant et persil.</p>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Tajine tunisien</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">6,50 €</span>
+          </div>
+          <p>Flan tunisien aux œufs et poulet parfumé aux épices.</p>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Assiette de frites maison</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">4,50 €</span>
+          </div>
+          <p>Frites maison croustillantes relevées d'un savoureux mélange d'épices tunisiennes.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENTRE-DEUX -->
+  <section class="menu-cat-section" id="entre-deux">
+    <div class="container">
+      <div class="cat-header">
+        <span class="cat-roman">III</span>
+        <h2>Entre-deux</h2>
+        <div class="cat-flourish"></div>
+      </div>
+
+      <h3 class="subcat-title">Ojja — Ragoût mijoté aux œufs</h3>
+      <div class="dishes-grid">
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Ojja Merguez</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">12 €</span>
+          </div>
+          <p>Ragoût de tomate mijoté avec des œufs, des épices et des merguez grillées.</p>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Ojja Crevettes</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">16 €</span>
+          </div>
+          <p>Ragoût de tomate mijoté avec des œufs, des épices et des crevettes.</p>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Ojja Fruits de mer</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">18 €</span>
+          </div>
+          <p>Ragoût de tomate mijoté avec des œufs, des épices et fruits de mer.</p>
+        </article>
+      </div>
+
+      <h3 class="subcat-title">Kafteji — Méli-mélo de légumes frits</h3>
+      <div class="dishes-grid">
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Kafteji Nature</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">12 €</span>
+          </div>
+          <p>Méli-mélo de légumes frits.</p>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Kafteji Escalope</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">14 €</span>
+          </div>
+          <p>Méli-mélo de légumes frits et escalope.</p>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Kafteji Merguez</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">14 €</span>
+          </div>
+          <p>Méli-mélo de légumes frits et merguez.</p>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Kafteji Foie d'agneau</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">14 €</span>
+          </div>
+          <p>Méli-mélo de légumes frits et foie d'agneau.</p>
+        </article>
+        <article class="dish dish-feature">
+          <div class="dish-head">
+            <h3>Kafteji Mixte</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">16 €</span>
+          </div>
+          <p>Méli-mélo de légumes frits, avec un mélange de merguez, escalope et foie d'agneau.</p>
+          <span class="dish-tag">À partager</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATS & SPÉCIALITÉS -->
+  <section class="menu-cat-section alt" id="plats">
+    <div class="container">
+      <div class="cat-header">
+        <span class="cat-roman">IV</span>
+        <h2>Plats & spécialités</h2>
+        <div class="cat-flourish"></div>
+      </div>
+
+      <h3 class="subcat-title">Spécialités traditionnelles</h3>
+      <div class="dishes-grid">
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Mlokhiya bœuf</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">17 €</span>
+          </div>
+          <p>Un plat tunisien rare et parfumé à base de poudre de corète mijoté lentement avec de la viande de bœuf.</p>
+        </article>
+        <article class="dish dish-feature">
+          <div class="dish-head">
+            <h3>Golla (souris d'agneau)</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">22 €</span>
+          </div>
+          <p>Une souris d'agneau fondante, longuement mijotée dans une sauce épicée aux saveurs tunisiennes.</p>
+          <span class="dish-tag">Spécialité maison</span>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Riz Djerbien</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">16 €</span>
+          </div>
+          <p>Riz, légumes et épices qui se marient à la viande d'agneau, dans la pure tradition de l'île de Djerba.</p>
+        </article>
+      </div>
+
+      <h3 class="subcat-title">Makarouna tunisienne</h3>
+      <div class="dishes-grid">
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Spaghettis aux fruits de mer</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">21 €</span>
+          </div>
+          <p>Pâtes à la sauce tomate épicée et fruits de mer.</p>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Makarouna à l'agneau</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">17 €</span>
+          </div>
+          <p>Pâtes à la sauce tomate épicée à la viande d'agneau.</p>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Makarouna au poulet</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">15 €</span>
+          </div>
+          <p>Pâtes à la sauce tomate épicée à la viande de poulet.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUSCOUS -->
+  <section class="menu-cat-section" id="couscous">
+    <div class="container">
+      <div class="cat-header">
+        <span class="cat-roman">V</span>
+        <h2>Couscous</h2>
+        <div class="cat-flourish"></div>
+      </div>
+      <p class="cat-desc">Semoule tunisienne accompagnée d'une sauce épicée et de légumes mijotés. Le rituel du vendredi.</p>
+      <div class="dishes-grid">
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Couscous légumes</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">14 €</span>
+          </div>
+          <p>Semoule tunisienne accompagnée d'une sauce épicée et de légumes mijotés.</p>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Couscous poulet</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">16 €</span>
+          </div>
+          <p>Semoule tunisienne, sauce épicée, légumes et poulet.</p>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Couscous merguez</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">16 €</span>
+          </div>
+          <p>Semoule tunisienne, sauce épicée, légumes et merguez.</p>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Couscous agneau</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">18 €</span>
+          </div>
+          <p>Semoule tunisienne, sauce épicée, légumes et agneau.</p>
+        </article>
+        <article class="dish dish-feature">
+          <div class="dish-head">
+            <h3>Couscous royal</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">23 €</span>
+          </div>
+          <p>Semoule tunisienne, sauce épicée, légumes et trois viandes (poulet, merguez, agneau).</p>
+          <span class="dish-tag">Royal</span>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Couscous brochettes</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">16 €</span>
+          </div>
+          <p>Semoule tunisienne, sauce épicée et brochettes de poulet.</p>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Couscous au poisson</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">18 €</span>
+          </div>
+          <p>Semoule tunisienne, sauce épicée, légumes et poissons du jour.</p>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Couscous au mérou</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">21 €</span>
+          </div>
+          <p>Semoule tunisienne, sauce épicée et tranche de mérou.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- POISSONS -->
+  <section class="menu-cat-section alt" id="poissons">
+    <div class="container">
+      <div class="cat-header">
+        <span class="cat-roman">VI</span>
+        <h2>Grillades de poissons & fruits de mer</h2>
+        <div class="cat-flourish"></div>
+      </div>
+
+      <h3 class="subcat-title">Poissons grillés</h3>
+      <div class="dishes-grid">
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Daurade grillée</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">17,50 €</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Bar grillé</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">19 €</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Sardines grillées au gros sel</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">15 €</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Rougets grillés</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">19 €</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Steak de thon grillé à la plancha</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">17,50 €</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Pavé de cabillaud à la plancha</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">17,50 €</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Pavé de saumon à la plancha</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">16,50 €</span>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="subcat-title">Plateaux à partager</h3>
+      <div class="dishes-grid sharing-grid">
+        <article class="dish dish-share">
+          <div class="dish-head">
+            <h3>Assiette à partager 1 kg</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">35 €</span>
+          </div>
+          <p>Pour 2 à 3 personnes.</p>
+        </article>
+        <article class="dish dish-share">
+          <div class="dish-head">
+            <h3>Assiette à partager 1,5 kg</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">50 €</span>
+          </div>
+          <p>Pour 4 à 5 personnes.</p>
+        </article>
+        <article class="dish dish-share dish-feature">
+          <div class="dish-head">
+            <h3>Assiette à partager 2 kg</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">67,90 €</span>
+          </div>
+          <p>Pour 5 à 6 personnes.</p>
+          <span class="dish-tag">Le grand plateau</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIANDES -->
+  <section class="menu-cat-section" id="viandes">
+    <div class="container">
+      <div class="cat-header">
+        <span class="cat-roman">VII</span>
+        <h2>Grillades de viandes</h2>
+        <div class="cat-flourish"></div>
+      </div>
+      <p class="cat-desc">Toutes nos grillades sont accompagnées de deux garnitures au choix : mechouia, tastira, omek houria, salade, riz, frites.</p>
+
+      <h3 class="subcat-title">Brochettes & assiettes</h3>
+      <div class="dishes-grid">
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Assiette foie d'agneau</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">17 €</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Assiette brochettes poulet</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">17 €</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Assiette brochettes bœuf</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">19 €</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Brochettes mixtes</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">19 €</span>
+          </div>
+          <p>Poulet, foie et bœuf.</p>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Côtelettes d'agneau (3 pièces)</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">19 €</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Entrecôte</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">24 €</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Côte de veau</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">24 €</span>
+          </div>
+        </article>
+        <article class="dish dish-feature">
+          <div class="dish-head">
+            <h3>Grillade mixte</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">22 €</span>
+          </div>
+          <p>Escalope, merguez, foie et côtelettes d'agneau.</p>
+          <span class="dish-tag">Le best-of</span>
+        </article>
+      </div>
+
+      <h3 class="subcat-title">Méchoui mixte à partager</h3>
+      <p class="cat-desc small">Escalope de poulet, foie d'agneau, brochettes de poulet, merguez, côtelettes d'agneau.</p>
+      <div class="dishes-grid sharing-grid">
+        <article class="dish dish-share">
+          <div class="dish-head">
+            <h3>Plat à partager 1 kg</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">45 €</span>
+          </div>
+          <p>Pour 2 à 3 personnes.</p>
+        </article>
+        <article class="dish dish-share">
+          <div class="dish-head">
+            <h3>Plat à partager 1,5 kg</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">65 €</span>
+          </div>
+          <p>Pour 4 à 5 personnes.</p>
+        </article>
+        <article class="dish dish-share dish-feature">
+          <div class="dish-head">
+            <h3>Plat à partager 2 kg</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">85 €</span>
+          </div>
+          <p>Pour 6 à 7 personnes.</p>
+          <span class="dish-tag">Le grand méchoui</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESSERTS -->
+  <section class="menu-cat-section alt" id="desserts">
+    <div class="container">
+      <div class="cat-header">
+        <span class="cat-roman">VIII</span>
+        <h2>Desserts</h2>
+        <div class="cat-flourish"></div>
+      </div>
+      <div class="dishes-grid">
+        <article class="dish dish-feature">
+          <div class="dish-head">
+            <h3>Assida Zgougou</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">6 €</span>
+          </div>
+          <p>Crème sucrée à base de pignons de pin recouverte d'une crème pâtissière parfumée.</p>
+          <span class="dish-tag">Tradition</span>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Assortiment de pâtisseries tunisiennes</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">7,50 €</span>
+          </div>
+          <p>Une sélection de douceurs orientales pour finir en beauté.</p>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Tiramisu maison</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">4,50 €</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Panna cotta maison</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">4,50 €</span>
+          </div>
+        </article>
+        <article class="dish">
+          <div class="dish-head">
+            <h3>Salade de fruits maison</h3>
+            <span class="dish-dots"></span>
+            <span class="dish-price">7 €</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOISSONS -->
+  <section class="menu-cat-section" id="boissons">
+    <div class="container">
+      <div class="cat-header">
+        <span class="cat-roman">IX</span>
+        <h2>Boissons</h2>
+        <div class="cat-flourish"></div>
+      </div>
+
+      <div class="drinks-columns">
+        <div class="drinks-col">
+          <h3 class="subcat-title">Boissons chaudes</h3>
+          <div class="dishes-grid one-col">
+            <article class="dish dish-line">
+              <div class="dish-head">
+                <h3>Café</h3>
+                <span class="dish-dots"></span>
+                <span class="dish-price">2,90 €</span>
+              </div>
+            </article>
+            <article class="dish dish-line">
+              <div class="dish-head">
+                <h3>Café crème — Direct</h3>
+                <span class="dish-dots"></span>
+                <span class="dish-price">3,90 €</span>
+              </div>
+            </article>
+            <article class="dish dish-line">
+              <div class="dish-head">
+                <h3>Cappuccino</h3>
+                <span class="dish-dots"></span>
+                <span class="dish-price">3,50 €</span>
+              </div>
+            </article>
+            <article class="dish dish-line">
+              <div class="dish-head">
+                <h3>Thé à la menthe</h3>
+                <span class="dish-dots"></span>
+                <span class="dish-price">4,50 €</span>
+              </div>
+            </article>
+            <article class="dish dish-line">
+              <div class="dish-head">
+                <h3>Thé au pignon</h3>
+                <span class="dish-dots"></span>
+                <span class="dish-price">3,90 €</span>
+              </div>
+            </article>
+            <article class="dish dish-line">
+              <div class="dish-head">
+                <h3>Café / Thé gourmand</h3>
+                <span class="dish-dots"></span>
+                <span class="dish-price">4,90 €</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="drinks-col">
+          <h3 class="subcat-title">Boissons fraîches</h3>
+          <div class="dishes-grid one-col">
+            <article class="dish dish-line">
+              <div class="dish-head">
+                <h3>Eau minérale 50 cl</h3>
+                <span class="dish-dots"></span>
+                <span class="dish-price">2 €</span>
+              </div>
+            </article>
+            <article class="dish dish-line">
+              <div class="dish-head">
+                <h3>Eau minérale 1 L</h3>
+                <span class="dish-dots"></span>
+                <span class="dish-price">2,90 €</span>
+              </div>
+            </article>
+            <article class="dish dish-line">
+              <div class="dish-head">
+                <h3>Eau gazeuse 50 cl</h3>
+                <span class="dish-dots"></span>
+                <span class="dish-price">3,90 €</span>
+              </div>
+            </article>
+            <article class="dish dish-line">
+              <div class="dish-head">
+                <h3>Eau gazeuse 1 L</h3>
+                <span class="dish-dots"></span>
+                <span class="dish-price">2,90 €</span>
+              </div>
+            </article>
+            <article class="dish dish-line">
+              <div class="dish-head">
+                <h3>Citronnade maison</h3>
+                <span class="dish-dots"></span>
+                <span class="dish-price">3,90 €</span>
+              </div>
+            </article>
+            <article class="dish dish-line">
+              <div class="dish-head">
+                <h3>Jus de fruits maison</h3>
+                <span class="dish-dots"></span>
+                <span class="dish-price">7,90 €</span>
+              </div>
+              <p class="drink-detail">Fraise, kiwi, banane.</p>
+            </article>
+            <article class="dish dish-line">
+              <div class="dish-head">
+                <h3>Boissons gazeuses</h3>
+                <span class="dish-dots"></span>
+                <span class="dish-price">3,50 €</span>
+              </div>
+              <p class="drink-detail">Coca-Cola, Coca Zero, Orangina, Sprite, Boga cidre, Boga menthe, Apla, Fanta.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA fin de carte -->
+  <section class="menu-end-cta">
+    <div class="container">
+      <h2>Prêt à vivre l'expérience ?</h2>
+      <p>Notre équipe vous attend 7j/7 de 12h à minuit pour vous faire voyager.</p>
+      <div class="hero-cta">
+        <a href="index.html#contact" class="btn btn-primary">Réserver une table</a>
+        <a href="index.html" class="btn btn-ghost-dark">Retour à l'accueil</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Blu blu</div>
+        <div class="footer-logo-sub">— sidi bou — Paris —</div>
+        <p class="footer-tagline">Le goût de la Tunisie,<br/>l'élégance de Paris.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html#histoire">Notre histoire</a></li>
+          <li><a href="menu.html">La carte</a></li>
+          <li><a href="index.html#galerie">Galerie</a></li>
+          <li><a href="index.html#avis">Avis clients</a></li>
+          <li><a href="index.html#contact">Réserver</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Coordonnées</h4>
+        <ul>
+          <li>56 bd Clemenceau</li>
+          <li>95240 Cormeilles-en-Parisis</li>
+          <li>7j/7 — 12h à 00h</li>
+          <li><a href="https://www.instagram.com/blublusidibouparis/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Informations</h4>
+        <ul>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="confidentialite.html">Confidentialité</a></li>
+          <li><a href="allergenes.html">Allergènes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Blu Blu Sidi Bou Paris — Tous droits réservés</p>
+      <p class="footer-credit">Conçu avec passion · بكل حب</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="menu.js"></script>
+</body>
+</html>
