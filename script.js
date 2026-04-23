@@ -41,17 +41,41 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => intro.style.display = 'none', 1400);
   }
 
-  // Bloquer le scroll UNIQUEMENT si on est sur une page avec intro
+  // === GESTION INTRO : uniquement à la première visite ===
+  // On utilise sessionStorage : l'intro ne s'affiche qu'une fois par session
+  // (jusqu'à ce que l'utilisateur ferme son onglet/navigateur).
+  // Au retour depuis le menu ou les pages légales, l'intro sera skippée.
+
   if (intro) {
-    document.body.style.overflow = 'hidden';
-  }
+    const introAlreadySeen = sessionStorage.getItem('blublu_intro_seen');
 
-  if (enterBtn) enterBtn.addEventListener('click', enterSite);
-  if (skipIntro) skipIntro.addEventListener('click', skipIntroAnimation);
+    if (introAlreadySeen) {
+      // L'utilisateur a déjà vu l'intro dans cette session : on la cache immédiatement
+      intro.style.display = 'none';
+      if (site) site.classList.add('revealed');
+      // Pas de blocage du scroll puisque l'intro ne s'affiche pas
+    } else {
+      // Première visite : on affiche l'intro normalement
+      document.body.style.overflow = 'hidden';
 
-  // Auto-skip si l'utilisateur préfère réduire les animations (et qu'il y a une intro)
-  if (intro && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    skipIntroAnimation();
+      // On marque l'intro comme vue dès qu'on clique sur "Franchir le seuil" ou "Passer l'intro"
+      const markIntroSeen = () => sessionStorage.setItem('blublu_intro_seen', '1');
+
+      if (enterBtn) enterBtn.addEventListener('click', () => {
+        markIntroSeen();
+        enterSite();
+      });
+      if (skipIntro) skipIntro.addEventListener('click', () => {
+        markIntroSeen();
+        skipIntroAnimation();
+      });
+
+      // Auto-skip si l'utilisateur préfère réduire les animations
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        markIntroSeen();
+        skipIntroAnimation();
+      }
+    }
   }
 
   // === NAVIGATION : Scroll effects ===
